@@ -11,6 +11,7 @@ import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import Tooltip from '@mui/material/Tooltip';
 import MenuItem from '@mui/material/MenuItem';
+import imagen from '../../src/aula.png';
 
 const pages = ['Inicio', 'Blog', 'Tareas']; // Los botones que cambiarán el contenido
 const settings = ['Perfil', 'Ajustes', 'Cerrar sesión'];
@@ -54,7 +55,7 @@ function ResponsiveAppBar({ handlePageChange }) {  // Recibe el cambio de págin
               textDecoration: 'none',
             }}
           >
-            Sara's App
+            <img src={imagen}/>
           </Typography>
 
           <Box sx={{ flexGrow: 1, display: { xs: 'flex', md: 'none' } }}>

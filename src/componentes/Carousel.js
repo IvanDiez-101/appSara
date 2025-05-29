@@ -25,7 +25,14 @@ export default function ImportantDaysCarousel() {
 
   const videoTemplate = (video) => {
     return (
-      <div className="border-1 surface-border border-round m-2 text-center py-4 px-3">
+      <div style={{
+            backgroundColor: "#A6C8FF",
+            borderRadius: "12px",
+            margin: "10px",
+            padding: "20px",
+            boxShadow: "0px 2px 10px rgba(0, 0, 0, 0.1)",
+            textAlign: "center",
+          }}>
         <h4 className="mb-2">{video.dayName}</h4>
         <p className="mb-3">{video.date}</p>
         <iframe

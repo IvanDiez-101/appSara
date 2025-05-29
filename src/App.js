@@ -4,6 +4,7 @@ import App1 from "./App1";
 import App2 from "./App2";
 import App3 from "./App3";
 import Footer from "./componentes/Footer";
+import './App.css'; // Asegúrate de tener esta línea
 
 function App() {
   const [selectedPage, setSelectedPage] = useState("Inicio");
@@ -27,9 +28,11 @@ function App() {
 
   return (
     <div className="App">
-      <ResponsiveAppBar handlePageChange={handlePageChange} />
-      {content}
-      <Footer />
+      <div className="app-content">
+        <ResponsiveAppBar handlePageChange={handlePageChange} />
+        <main className="main-content">{content}</main>
+        <Footer />
+      </div>
     </div>
   );
 }

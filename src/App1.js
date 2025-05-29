@@ -38,7 +38,7 @@ function App() {
 
         <MapComponent marginTop="20px" />
       </Box>
-      <div style={{ marginBottom: "40px" }}>
+      <div style={{ marginBottom: "50px", marginTop: "60px" }}>
         <CarouselApp />
       </div>
     </div>

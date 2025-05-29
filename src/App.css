@@ -1,4 +1,22 @@
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
 .App {
-  text-align: center;
-  background: url('https://thumbs.dreamstime.com/b/modelo-incons%C3%BAtil-del-cielo-nublado-51169128.jpg') repeat;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: url('https://www.solidbackgrounds.com/download/2560x1440-blue-stained-glass-free-website-background-image.jpg') repeat center center fixed;
+  background-size: cover;
+}
+
+.app-content {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex: 1;
 }
